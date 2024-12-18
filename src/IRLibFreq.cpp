@@ -8,7 +8,13 @@
  * passing the interrupt number.
  */
 #include <Arduino.h>
+
+#ifdef ESP32
+// #include <interrupt.h>
+#else
 #include <avr/interrupt.h>
+#endif  // ifdef ESP32
+
 #include "IRLibFreq.h"
 
 volatile FREQUENCY_BUFFER_TYPE *IRfreqTimes;

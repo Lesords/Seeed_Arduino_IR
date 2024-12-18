@@ -7,6 +7,7 @@
  * receiver because the 50 microsecond interrupts from IRrecv
  * can cause inaccurate results.
  */
+#include <Arduino.h>
 #include <IRLibAll.h>//Note this also includes "IRLibFreq.h"
 
 //NOTE: Previous versions of IRLib required you to pass the 

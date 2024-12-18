@@ -4,6 +4,7 @@
  * an IR learner such as TSMP58000 to a hardware interrupt pin.
  */
 
+#include <Arduino.h>
 #include <IRLibFreq.h>  
 
 #define FREQUENCY_PIN 3
