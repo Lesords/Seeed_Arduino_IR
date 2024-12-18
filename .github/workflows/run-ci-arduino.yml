@@ -33,6 +33,15 @@ jobs:
       - name: Create a ignore.list file
         run: |
           # eg: echo "<path>,<fqbn>" >> ignore.list
+          echo "rawSend,Seeeduino:samd:seeed_XIAO_m0" >> ignore.list
+          echo "rawSend,Seeeduino:nrf52:xiaonRF52840" >> ignore.list
+          echo "rawSend,Seeeduino:nrf52:xiaonRF52840Sense" >> ignore.list
+          echo "rawSend,Seeeduino:renesas_uno:XIAO_RA4M1" >> ignore.list
+          echo "rawSend,rp2040:rp2040:seeed_xiao_rp2040" >> ignore.list
+          echo "rawSend,rp2040:rp2040:seeed_xiao_rp2350" >> ignore.list
+          echo "rawSend,esp32:esp32:XIAO_ESP32C3" >> ignore.list
+          echo "rawSend,esp32:esp32:XIAO_ESP32C6" >> ignore.list
+          echo "rawSend,esp32:esp32:XIAO_ESP32S3" >> ignore.list
 
       - name: Build sketch
         run: ./ci/tools/compile.sh
